@@ -9,7 +9,7 @@ title: pivO'tes
     <a href="#portfolio" id="portfolio-button" class="menu-button">Portfolio</a>
     <a href="#contact" id="contact-button" class="menu-button">Contact</a>
   </div>
-   <div class="banner-menu dropdown hidden-sm hidden-md hidden-lg">
+   <div class="banner-menu dropdown hidden-sm hidden-md hidden-lg" id="dropdown-button">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
         <li><%= link_to "Accueil", "/#index" %></li>
@@ -120,8 +120,7 @@ title: pivO'tes
           <p><i class="fas fa-chevron-circle-right"></i> Création et <strong>Gestion de Projets</strong> Web</p>
           <p><i class="fas fa-chevron-circle-right"></i> Parcours d'appropriation du Site avec Fourniture de Notices</p>
           <p><i class="fas fa-chevron-circle-right"></i> <strong>Accompagnement</strong> et Transfert de connaissance</p>
-          <p><i class="fas fa-chevron-circle-right"></i> Devis et Premier Rendez vous Gratuit sous une semaine</p>
-           <p><i class="fas fa-chevron-circle-right"></i> <strong>Expertise</strong> - Compétences métiers logistique, achat, finance, gestion de projets,...</p>
+          <p><i class="fas fa-chevron-circle-right"></i> <strong>Expertise</strong> - Compétences métiers logistique, achat, finance, gestion de projets,...</p>
         </div>
         <div class="service-card service-card-xs">
           <p id="p-title">Technologies</p>
@@ -260,6 +259,7 @@ title: pivO'tes
 </div>
 
 <script>
+
   function menu_active() {
   const buttons = document.querySelectorAll(".menu-button");
   buttons.forEach((button) => {
@@ -316,4 +316,6 @@ title: pivO'tes
   }
   menu_active();
   onScroll();
+
 </script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
