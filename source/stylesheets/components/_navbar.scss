@@ -55,9 +55,9 @@
   transition: color 0.3s ease;
   font-weight: lighter !important;
   color: #999999 !important;
-  font-size: 15px !important;
+  font-size: 10px !important;
   line-height: 22px !important;
-  padding: 10px 20px;
+  padding: 0px 10px;
 }
 .navbar-wagon-dropdown-menu li > a:hover {
   background: transparent !important;
@@ -74,4 +74,8 @@
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
+}
+
+.dropdown-menu {
+  min-width: 100px;
 }
