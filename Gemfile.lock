@@ -41,7 +41,7 @@ GEM
     ffi (1.9.25)
     font-awesome-middleman (4.2.1)
       middleman-core (>= 3.0.0)
-    font-awesome-sass (5.2.0)
+    font-awesome-sass (5.0.13)
       sassc (>= 1.11)
     haml (5.0.4)
       temple (>= 0.8.0)
@@ -143,7 +143,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 3.3)
   font-awesome-middleman
-  font-awesome-sass
+  font-awesome-sass (~> 5.0.9)
   jquery-middleman
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.7)
