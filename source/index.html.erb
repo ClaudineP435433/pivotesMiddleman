@@ -183,13 +183,9 @@ title: pivO'tes
     <!-- Vue Normal -->
     <div class="banner-content-around hidden">
       <div class="flex-column card-space">
-        <!-- div class="card-img">
-        <%#= link_to "http://www.riadzouhra.com/" do %>
-          <div class="card">
-            <%#= image_tag "riad.png"%>
-          </div>
-        <%# end %>
-        </div> -->
+        <div class="card-img">
+          <%= link_to (image_tag "riad.png"), "http://www.riadzouhra.com/", class: "card" %>
+        </div>
         <div class="card-img">
         <%= link_to "Happy", "http://www.happyseat.fr/" %>
        <!--    <div class="card">
@@ -221,24 +217,20 @@ title: pivO'tes
         </div>
       </div>
       <p id="subtitle">Site et Application web</p>
-      <!-- <div class="row">
+      <div class="row">
         <div class="flex-center">
           <div class="col-xs-5 col-sm-4 col-md-3">
-          <%#= link_to "http://www.riadzouhra.com/", target: "_blank" do %>
             <div class="card">
-              <%#= image_tag "riad.png"%>
+              <%= link_to (image_tag "riad.png"), "http://www.riadzouhra.com/", target: "_blank" %>
             </div>
-          <%# end %>
           </div>
           <div class="col-xs-5 col-sm-4 col-md-3">
-          <%#= link_to "http://www.happyseat.fr/", target: "_blank" do %>
             <div class="card">
-              <%#= image_tag "happy.png"%>
+              <%= link_to (image_tag "happy.png"), "http://www.happyseat.fr/", target: "_blank" %>
             </div>
-          <%# end %>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
 
   </div>
