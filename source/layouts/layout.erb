@@ -1,17 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title %></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>pivO'tes, Claudine Pradal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="icon" type="image/svg" href="images/favicon.svg" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+
+    <!-- pour google -->
+    <meta name="description" content="Curieuse, pétillante, j'aime relever de nouveaux défis chaque jour en collaboration avec mes différents interlocuteurs. Concevoir, Améliorer de nouvelles solutions numérique est un travail d'équipe, un accompagnement, un défi grisant pour assurer une réponse optimale à un besoin. pivO'tes permet aujourd'hui d'aider des clients de tout horizon dans leur aventure digitale." >
+
+    <!-- pour fb -->
+    <meta property=“og:title” content="pivO'tes">
+    <meta property=“og:image” content="images/logo.png">
+    <meta property=“og:description” content="Curieuse, pétillante, j'aime relever de nouveaux défis chaque jour en collaboration avec mes différents interlocuteurs. Concevoir, Améliorer de nouvelles solutions numérique est un travail d'équipe, un accompagnement, un défi grisant pour assurer une réponse optimale à un besoin. pivO'tes permet aujourd'hui d'aider des clients de tout horizon dans leur aventure digitale.">
+
+    <%= csrf_meta_tags %>
+    <%#= action_cable_meta_tag %>
     <%= stylesheet_link_tag "application" %>
-    <%= javascript_include_tag "application" %>
-    <%= favicon_tag 'images/favicon.png' %>
+     <%= javascript_include_tag "application" %>
+    <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122525070-1"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "https://pivotes.herokuapp.com/",
+      "contactPoint": [
+        { "@type": "ContactPoint",
+          "url": "https://pivotes.herokuapp.com/#contact",
+          "email": "clo.pradal@gmail.com",
+          "contactType": "customer service"
+        }
+      ],
+      "image": "images/logo.png",
+      "description": "Curieuse, pétillante, j'aime relever de nouveaux défis chaque jour en collaboration avec mes différents interlocuteurs. Concevoir, Améliorer de nouvelles solutions numérique est un travail d'équipe, un accompagnement, un défi grisant pour assurer une réponse optimale à un besoin. pivO'tes permet aujourd'hui d'aider des clients de tout horizon dans leur aventure digitale."
+    }
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-122525070-1');
+    </script>
+
   </head>
   <body>
+    <%#= render 'shared/navbar' %>
+    <%#= render 'shared/flashes' %>
     <%= yield %>
+    <%= javascript_include_tag 'application' %>
+    <%#= javascript_pack_tag 'application' %>
   </body>
 </html>

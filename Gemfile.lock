@@ -141,7 +141,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-sass
+  bootstrap-sass (~> 3.3)
   font-awesome-middleman
   font-awesome-sass
   jquery-middleman
